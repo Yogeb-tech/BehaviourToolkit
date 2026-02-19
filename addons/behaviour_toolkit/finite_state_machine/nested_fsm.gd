@@ -1,11 +1,7 @@
+## @experimental: Ready for use, but still awaiting full testing
 @tool
 extends FSMState
 class_name NestedFSM
-
-# TODO:
-# Make Template
-# Integrate into UI
-# Add to the documentation
 
 ## An implementation of a simple finite state machine.
 ##
@@ -72,11 +68,6 @@ func _on_enter(_actor: Node, _blackboard: Blackboard) -> void:
 # Executes before the state is exited.
 func _on_exit(_actor: Node, _blackboard: Blackboard) -> void:
 	fsm.active = false
-
-
-# TODO: Improve configuration warnings for Nested FSM
-# Now that NestedFSMs exist, there should be one to account for when the user selects a state from another FSM as an intitial state
-
 
 # Add custom configuration warnings
 # Note: Can be deleted if you don't want to define your own warnings.
