@@ -1,4 +1,5 @@
-## @experimental: Ready for use, but still awaiting full testing
+## @experimental: As an experimental feature, this may still contain bugs. 
+## Please be aware that its API and functionality are subject to change in future updates.
 @tool
 extends FSMState
 class_name NestedFSM
