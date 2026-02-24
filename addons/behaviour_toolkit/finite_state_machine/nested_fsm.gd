@@ -7,10 +7,10 @@ class_name NestedFSM
 ## An implementation of a simple finite state machine.
 ##
 ## The Nested Finite State Machine is a state that contains a FiniteStateMachine insde
-## This Instanced FiniteStateMachine inherits values from the parent FiniteStateMachine.
+## This instanced FiniteStateMachine inherits values from the parent FiniteStateMachine.
 ## On ready, the NestedFSM will reparent each child that is an FSMState or NestedFSM to the new FiniteStateMachine.
-## To implement your logic you can override the [code]_on_enter, _on_update and
-## _on_exit[/code] methods when extending the node's script.
+## To implement your logic you can override the _on_enter, _on_update and
+## _on_exit methods when extending the node's script.
 
 
 ## The signal emitted when the fsm's state changes.
