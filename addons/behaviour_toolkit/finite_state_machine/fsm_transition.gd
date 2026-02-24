@@ -67,7 +67,7 @@ func _get_configuration_warnings() -> PackedStringArray:
 	if use_event and event == "":
 		warnings.append("FSMTransition has no event set.")
 	
-	#HACK: Could benefit from caching fsm
+	# HACK: Could benefit from caching fsm
 	var fsm := _find_fsm()
 	if fsm:
 		# Get paths directly
@@ -75,8 +75,8 @@ func _get_configuration_warnings() -> PackedStringArray:
 		var their_path := fsm.get_path_to(next_state)
 			
 		# Debug prints
-		print(name, " Our Path: ", our_path.get_name_count())
-		print(name, " Next Path: ", their_path.get_name_count())
+		# print(name, " Our Path: ", our_path.get_name_count())
+		# print(name, " Next Path: ", their_path.get_name_count())
 			
 		# Compare the number of node names in the node paths
 		var our_size := our_path.get_name_count()
