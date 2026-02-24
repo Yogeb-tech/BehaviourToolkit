@@ -6,7 +6,7 @@ const SPRINT_MULTIPLIER := 1.7
 
 
 var movement_direction := Vector2.ZERO
-
+var in_action := false
 
 @onready var state_machine := $FSMController
 @onready var sprite := $Sprite2D
@@ -19,7 +19,6 @@ func _physics_process(_delta):
 		Input.get_axis("ui_left", "ui_right"),
 		Input.get_axis("ui_up", "ui_down")
 	)
-
 
 func _ready():
 	state_machine.start()
